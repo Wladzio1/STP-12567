@@ -26,6 +26,7 @@
   align-items: center;
   justify-content: center;
   flex-shrink: 0;
+  margin-right: 160px;
 }
 
 .nav-logo-img {
@@ -169,7 +170,7 @@ body.menu-open {
   overflow: hidden;
 }
 
-@media only screen and (min-width: 1200px) {
+@media only screen and (min-width: 1440px) {
   .nav {
     gap: 48px;
   }
