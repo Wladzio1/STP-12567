@@ -6,38 +6,9 @@
 
   background-color: #fdfcf9;
   --green-color: #77b73d;
-  --text-color: #53311E;
-  --accent-yellow: #FCCB41;
-
-  h1 {
-    font-size: 80px;
-    font-weight: 800;
-    line-height: 125%;
-    text-align: center;
-  }
-
-  h2 {
-    font-size: 40px;
-    font-weight: 800;
-    line-height: 125%;
-    text-align: center;
-  }
-
-  h3 {
-    font-size: 24px;
-    font-weight: 600;
-    line-height: 125%;
-    text-align: center;
-  }
-
-  p {
-    font-size: 20px;
-    font-weight: 400;
-    line-height: 125%;
-    text-align: center;
-  }
+  --text-color: #53311e;
+  --accent-yellow: #fccb41;
 }
-
 body {
   display: flex;
   flex-direction: column;

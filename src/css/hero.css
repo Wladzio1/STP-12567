@@ -1,0 +1,150 @@
+.hero {
+  background-image: url('../img/hero/hero-bg-mob-1x.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-top: 40px;
+  padding-bottom: 350px;
+}
+
+@media only screen and (min-resolution: 192dpi),
+  only screen and (min-resolution: 2dppx) {
+  .hero {
+    background-image: url('../img/hero/hero-bg-mob-2x.png');
+  }
+}
+
+.hero-content {
+  display: flex;
+  flex-direction: column;
+}
+
+.hero-title {
+  font-weight: 800;
+  font-size: 40px;
+  line-height: 1.25;
+  color: #fdfcf9;
+  text-align: center;
+  text-shadow: 0 4px 8px rgba(0, 0, 0, 0.72);
+  margin-bottom: 24px;
+}
+
+.hero-title-accent {
+  color: #fccb41;
+}
+
+.hero-title-line {
+  display: inline;
+}
+
+.hero-text {
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 1.25;
+  text-align: center;
+  color: #fdfcf9;
+  text-shadow: 0 4px 8px rgba(0, 0, 0, 0.72);
+  margin-bottom: 32px;
+  padding: 14px 48px;
+}
+
+.hero-cta {
+  display: inline-flex;
+  align-self: center;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  width: 260px;
+  min-height: 77px;
+  font-weight: 800;
+  font-size: 20px;
+  line-height: 1.25;
+  color: #fdfcf9;
+  text-align: center;
+  background-image: url('../img/hero/google-play-btn-mob-1x.png');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.hero-cta:hover,
+.hero-cta:focus {
+  background-image: url('../img/hero/google-play-btn-mob-focus-1x.png');
+}
+
+@media only screen and (min-resolution: 192dpi),
+  only screen and (min-resolution: 2dppx) {
+  .hero-cta {
+    background-image: url('../img/hero/google-play-btn-mob-2x.png');
+  }
+
+  .hero-cta:hover,
+  .hero-cta:focus {
+    background-image: url('../img/hero/google-play-btn-mob-focus-2x.png');
+  }
+}
+
+@media only screen and (min-width: 1440px) {
+  .hero {
+    background-image: url('../img/hero/hero-bg-1x.png');
+    padding-top: 90px;
+    padding-bottom: 348px;
+  }
+
+  .hero-content {
+    width: 670px;
+    height: 486px;
+    text-align: left;
+  }
+
+  .hero-title {
+    font-size: 80px;
+    text-align: left;
+  }
+
+  .hero-title-line {
+    display: block;
+  }
+
+  .hero-text {
+    font-size: 24px;
+    text-align: left;
+    padding-right: 0;
+    padding-left: 0;
+  }
+
+  .hero-cta {
+    align-self: flex-start;
+    width: 350px;
+    min-height: 104px;
+    font-size: 28px;
+    background-image: url('../img/hero/google-play-btn-1x.png');
+  }
+
+  .hero-cta:hover {
+    background-image: url('../img/hero/google-play-btn-hover-1x.png');
+  }
+
+  .hero-cta:focus {
+    background-image: url('../img/hero/google-play-btn-desk-focus-1x.png');
+  }
+}
+
+@media only screen and (min-width: 1440px) and (min-resolution: 192dpi),
+  only screen and (min-width: 1440px) and (min-resolution: 2dppx) {
+  .hero {
+    background-image: url('../img/hero/hero-bg-2x.png');
+  }
+
+  .hero-cta {
+    background-image: url('../img/hero/google-play-btn-2x.png');
+  }
+
+  .hero-cta:hover {
+    background-image: url('../img/hero/google-play-btn-hover-2x.png');
+  }
+
+  .hero-cta:focus {
+    background-image: url('../img/hero/google-play-btn-desk-focus-2x.png');
+  }
+}
