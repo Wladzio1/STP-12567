@@ -1,0 +1,81 @@
+.why-download {
+  padding: 40px 0;
+}
+
+.why-download-wrap {
+  margin-bottom: 32px;
+}
+.why-download-title {
+  font-weight: 800;
+  font-size: 40px;
+  line-height: 1.25;
+  color: #77b73d;
+  margin-bottom: 12px;
+}
+.why-download-text {
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 1.25;
+  color: #53311e;
+}
+.why-download-content {
+}
+.why-download-content-list {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.why-download-content-item {
+  display: flex;
+  flex-direction: column;
+  border: 3px solid #53311e;
+  border-radius: 12px;
+  padding: 24px 8px 0;
+
+  min-height: 240px;
+}
+.why-download-content-img {
+  margin: 0 auto;
+  margin-bottom: 16px;
+}
+.why-download-content-title {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 1.25;
+  letter-spacing: -0.01em;
+  text-align: center;
+  color: #53311e;
+  margin-bottom: 8px;
+}
+.why-download-content_text {
+  font-size: 20px;
+  line-height: 1.25;
+  text-align: center;
+  color: #53311e;
+  margin-bottom: 14px;
+}
+.why-download-content-decor {
+  margin-top: auto;
+}
+@media screen and (min-width: 1440px) {
+  .why-download-container {
+    display: flex;
+    align-items: center;
+  }
+  .why-download-content-list {
+    display: grid;
+    gap: 8px;
+  }
+
+  @media screen and (min-width: 1440px) {
+    .why-download-content-list {
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    .why-download-content-item {
+      width: auto;
+      min-height: 240px;
+    }
+  }
+}
