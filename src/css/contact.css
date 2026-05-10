@@ -2,16 +2,25 @@
   margin: 0;
 }
 
-@media (max-width: 1439px) {
-  .contact-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    gap: 24px;
-    padding: 40px 0;
-  }
+.contact-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 24px;
+  padding: 40px 0;
 }
+.email-block {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 343px;
+  height: 49px;
+  background-color: #fdfcf9;
+  border-radius: 8px;
+}
+
+/* Desktop */
 
 @media (min-width: 1440px) {
   .contact-container {
