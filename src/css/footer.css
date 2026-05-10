@@ -2,7 +2,7 @@
   padding: 80px 96px;
 }
 
-.container {
+.footer-container {
   flex-direction: row;
   justify-content: space-between;
   align-items: flex-end;
