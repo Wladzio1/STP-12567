@@ -25,20 +25,30 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
   gap: 24px;
 }
 .gameplay-loop-content-item {
+  position: relative;
   padding: 20px;
   flex-basis: 100%;
 }
+.gameplay-loop-decor-img {
+  position: absolute;
+  top: -30px;
+  right: 50px;
+  transform: rotate(70deg);
+}
 .gameplay-loop-content-img {
+  width: 156px;
+  height: 200px;
   margin: 0 auto;
   margin-bottom: 12px;
 }
 .gameplay-loop-content-box {
   display: flex;
   flex-direction: column;
-  align-items: baseline;
+  align-items: center;
   min-height: 140px;
 }
 .gameplay-loop-content-title {
@@ -80,8 +90,17 @@
   }
   .gameplay-loop-content-item {
     flex-basis: calc((100% - 4 * 24px) / 5);
+    position: relative;
+  }
+  .gameplay-loop-decor-img {
+    position: absolute;
+    top: 22px;
+    left: -24px;
+    transform: rotate(0deg);
   }
   .gameplay-loop-content-img {
+    width: 203px;
+    height: 260px;
     margin-bottom: 16px;
   }
   .gameplay-loop-content-title {
