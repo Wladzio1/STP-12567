@@ -1,0 +1,42 @@
+.gallery {
+  background-color: #77b73d;
+  width: 100vw;
+}
+
+.gallery-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+  padding: 0;
+}
+
+.gallery-title,
+.gallery-h3 {
+  margin: 0;
+}
+
+.gallery-grid {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.gallery-swiper {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  width: 100%;
+}
+
+.gallery-btn {
+  display: flex;
+  width: 40px;
+  height: 40px;
+  border: none;
+  border-radius: 2px;
+  align-items: center;
+  justify-content: center;
+  background-color: #ffffff;
+  color: transparent;
+}
