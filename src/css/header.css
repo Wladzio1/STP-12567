@@ -109,13 +109,15 @@
 }
 
 .header-burger-menu {
+  --header-menu-side-gap: max(16px, calc((100vw - 375px) / 2 + 16px));
+
   position: fixed;
   top: 0;
   right: 0;
   z-index: 101;
   width: 100vw;
   height: 100vh;
-  padding: 16px;
+  padding: 16px var(--header-menu-side-gap);
 
   background-color: #fdfcf9;
   transform: translateX(100%);
@@ -127,7 +129,7 @@
 .header-btn-close {
   position: absolute;
   top: 32px;
-  right: 10px;
+  right: var(--header-menu-side-gap);
   display: inline-flex;
   align-items: center;
   justify-content: center;
