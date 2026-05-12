@@ -1,34 +1,138 @@
-<section class="gallery">
+<section class="gallery" id="galleryid">
   <div class="container gallery-container">
     <div class="gallery-content">
       <h2 class="gallery-title">Gallery</h2>
       <h3 class="gallery-h3">From small farm industry</h3>
     </div>
+
     <div class="gallery-grid">
-      <div class="gallery-swiper">
-        <button class="gallery-btn">
-          <svg
-            class="arrow left-arrow"
-            width="24"
-            height="24"
-            aria-hidden="true"
-          >
-            <use href="../img//left-arrow.svg"></use>
+      <div class="gallery-nav">
+        <button class="gallery-btn prev-btn">
+          <svg class="arrow left-arrow" width="24" height="24">
+            <use href="../img/icons.svg#left-arrow"></use>
           </svg>
         </button>
-        <button class="gallery-btn">
-          <svg
-            class="arrow right-arrow"
-            fill="none"
-            width="24"
-            height="24"
-            aria-hidden="true"
-          >
-            <use href="../img//right-arrow.svg"></use>
+        <button class="gallery-btn next-btn">
+          <svg class="arrow right-arrow" width="24" height="24">
+            <use href="../img/icons.svg#right-arrow"></use>
           </svg>
         </button>
       </div>
-      <div class="gallery-imgs"></div>
+
+      <div class="swiper gallery-swiper-main">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <picture>
+              <source
+                media="(min-width: 1440px)"
+                srcset="
+                  ./img/gallery/desktop/1x/Screenshot01.png 1x,
+                  ./img/gallery/desktop/2x/Screenshot01.png 2x
+                "
+              />
+              <source
+                srcset="
+                    ./img/gallery/mob/1x/Screenshot01.png 1x,
+                  ./img/gallery/mob/2x/Screenshot01.png 2x
+                "
+              />
+              <img
+                src="./img/gallery/mob/1x/Screenshot01.png"
+                alt="A screenshot of a gameplay showing a farm."
+                loading="lazy"
+              />
+            </picture>
+          </div>
+          <div class="swiper-slide">
+            <picture>
+              <source
+                media="(min-width: 1440px)"
+                srcset="
+                  ./img/gallery/desktop/1x/Screenshot02.png 1x,
+                  ./img/gallery/desktop/2x/Screenshot02.png 2x
+                "
+              />
+              <source
+                srcset="
+                  ./img/gallery/mob/1x/Screenshot02.png 1x,
+                  ./img/gallery/mob/2x/Screenshot02.png 2x
+                "
+              />
+              <img
+                src="./img/gallery/mob/1x/Screenshot02.png"
+                alt="A screenshot of a gameplay showing a farm."
+                loading="lazy"
+              />
+            </picture>
+          </div>
+          <div class="swiper-slide">
+            <picture>
+              <source
+                media="(min-width: 1440px)"
+                srcset="
+                  ./img/gallery/desktop/1x/Screenshot03.png 1x,
+                  ./img/gallery/desktop/2x/Screenshot03.png 2x
+                "
+              />
+              <source
+                srcset="
+                  ./img/gallery/mob/1x/Screenshot03.png 1x,
+                  ./img/gallery/mob/2x/Screenshot03.png 2x
+                "
+              />
+              <img
+                src="./img/gallery/mob/1x/Screenshot03.png"
+                alt="A screenshot of a gameplay showing a farm."
+                loading="lazy"
+              />
+            </picture>
+          </div>
+          <div class="swiper-slide">
+            <picture>
+              <source
+                media="(min-width: 1440px)"
+                srcset="
+                  ./img/gallery/desktop/1x/Screenshot04.png 1x,
+                  ./img/gallery/desktop/2x/Screenshot04.png 2x
+                "
+              />
+              <source
+                srcset="
+                  ./img/gallery/mob/1x/Screenshot04.png 1x,
+                  ./img/gallery/mob/2x/Screenshot04.png 2x
+                "
+              />
+              <img
+                src="./img/gallery/mob/1x/Screenshot04.png"
+                alt="A screenshot of a gameplay showing a farm."
+                loading="lazy"
+              />
+            </picture>
+          </div>
+          <div class="swiper-slide">
+            <picture>
+              <source
+                media="(min-width: 1440px)"
+                srcset="
+                  ./img/gallery/desktop/1x/Screenshot05.png 1x,
+                  ./img/gallery/desktop/2x/Screenshot05.png 2x
+                "
+              />
+              <source
+                srcset="
+                  ./img/gallery/mob/1x/Screenshot05.png 1x,
+                  ./img/gallery/mob/2x/Screenshot05.png 2x
+                "
+              />
+              <img
+                src="./img/gallery/mob/1x/Screenshot05.png"
+                alt="A screenshot of a gameplay showing a farm."
+                loading="lazy"
+              />
+            </picture>
+          </div>
+        </div>
+      </div>
     </div>
   </div>
 </section>
