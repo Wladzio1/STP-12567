@@ -108,7 +108,6 @@
 .hero-cta:hover,
 .hero-cta:focus {
   transform: translateY(-2px) scale(1.02);
-  filter: drop-shadow(0 6px 8px rgba(0, 0, 0, 0.24));
 }
 
 .hero-cta:hover::after,

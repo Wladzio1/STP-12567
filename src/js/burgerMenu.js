@@ -1,7 +1,7 @@
 const openBtnEl = document.querySelector('[data-action="open"]');
 const closeBtnEl = document.querySelector('[data-action="close"]');
 const burgerMenuEl = document.querySelector('[data-visible]');
-const burgerLinkEls = document.querySelectorAll('.burger-link');
+const burgerLinkEls = document.querySelectorAll('.header-burger-link');
 
 if (openBtnEl && closeBtnEl && burgerMenuEl) {
   openBtnEl.addEventListener('click', () => {
