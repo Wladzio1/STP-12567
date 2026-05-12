@@ -1,5 +1,6 @@
 .gameplay-loop {
   padding: 40px 0;
+  scroll-margin-top: 70px;
 }
 .gameplay-loop-wrap {
   display: flex;

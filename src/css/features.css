@@ -1,6 +1,7 @@
 .features {
   background-color: #77b73d;
   padding: 40px 0px;
+  scroll-margin-top: 80px;
 }
 .features-wrap {
   margin-bottom: 32px;
