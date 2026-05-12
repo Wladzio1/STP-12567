@@ -60,6 +60,7 @@
   z-index: 99;
 }
 .hero-cta {
+  position: relative;
   display: inline-flex;
   align-self: center;
   align-items: center;
@@ -71,25 +72,61 @@
   line-height: 1.25;
   color: #fdfcf9;
   text-align: center;
-  background-image: url('../img/hero/google-play-btn-mob-1x.png');
+  isolation: isolate;
+  transition:
+    transform 250ms ease,
+    filter 250ms ease;
+}
+
+.hero-cta::before,
+.hero-cta::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  z-index: 0;
   background-position: center;
   background-repeat: no-repeat;
   background-size: contain;
+  pointer-events: none;
+}
+
+.hero-cta::before {
+  background-image: url('../img/hero/google-play-btn-mob-1x.png');
+}
+
+.hero-cta::after {
+  background-image: url('../img/hero/google-play-btn-mob-focus-1x.png');
+  opacity: 0;
+  transition: opacity 250ms ease;
+}
+
+.hero-cta-line {
+  position: relative;
+  z-index: 1;
 }
 
 .hero-cta:hover,
 .hero-cta:focus {
-  background-image: url('../img/hero/google-play-btn-mob-focus-1x.png');
+  transform: translateY(-2px) scale(1.02);
+  filter: drop-shadow(0 6px 8px rgba(0, 0, 0, 0.24));
+}
+
+.hero-cta:hover::after,
+.hero-cta:focus::after {
+  opacity: 1;
+}
+
+.hero-cta:active {
+  transform: translateY(0) scale(0.98);
 }
 
 @media only screen and (min-resolution: 192dpi),
   only screen and (min-resolution: 2dppx) {
-  .hero-cta {
+  .hero-cta::before {
     background-image: url('../img/hero/google-play-btn-mob-2x.png');
   }
 
-  .hero-cta:hover,
-  .hero-cta:focus {
+  .hero-cta::after {
     background-image: url('../img/hero/google-play-btn-mob-focus-2x.png');
   }
 }
@@ -134,19 +171,58 @@
 
   .hero-cta {
     align-self: flex-start;
-    align-self: flex-start;
     width: 350px;
     min-height: 104px;
     font-size: 28px;
+    transform-origin: center;
+  }
+
+  .hero-cta::before {
     background-image: url('../img/hero/google-play-btn-1x.png');
   }
 
-  .hero-cta:hover {
-    background-image: url('../img/hero/google-play-btn-hover-1x.png');
+  .hero-cta::after {
+    background-image:
+      linear-gradient(
+        105deg,
+        transparent 30%,
+        rgba(255, 255, 255, 0.34) 44%,
+        transparent 58%
+      ),
+      url('../img/hero/google-play-btn-hover-1x.png');
+    background-position:
+      -160% center,
+      center;
+    background-size:
+      52% 100%,
+      contain;
   }
 
+  .hero-cta:focus::after {
+    background-image:
+      linear-gradient(
+        105deg,
+        transparent 30%,
+        rgba(255, 255, 255, 0.34) 44%,
+        transparent 58%
+      ),
+      url('../img/hero/google-play-btn-desk-focus-1x.png');
+  }
+
+  .hero-cta:hover,
   .hero-cta:focus {
-    background-image: url('../img/hero/google-play-btn-desk-focus-1x.png');
+    animation: hero-cta-lift 520ms cubic-bezier(0.34, 1.56, 0.64, 1) both;
+    filter: drop-shadow(0 10px 12px rgba(0, 0, 0, 0.3));
+  }
+
+  .hero-cta:hover::after,
+  .hero-cta:focus::after {
+    animation: hero-cta-shine 760ms ease both;
+  }
+
+  .hero-cta:hover .hero-cta-line,
+  .hero-cta:focus .hero-cta-line {
+    animation: hero-cta-text-pop 520ms ease both;
   }
 }
 
@@ -156,15 +232,83 @@
     background-image: url('../img/hero/hero-bg-2x.png');
   }
 
-  .hero-cta {
+  .hero-cta::before {
     background-image: url('../img/hero/google-play-btn-2x.png');
   }
 
-  .hero-cta:hover {
-    background-image: url('../img/hero/google-play-btn-hover-2x.png');
+  .hero-cta::after {
+    background-image:
+      linear-gradient(
+        105deg,
+        transparent 30%,
+        rgba(255, 255, 255, 0.34) 44%,
+        transparent 58%
+      ),
+      url('../img/hero/google-play-btn-hover-2x.png');
   }
 
-  .hero-cta:focus {
-    background-image: url('../img/hero/google-play-btn-desk-focus-2x.png');
+  .hero-cta:focus::after {
+    background-image:
+      linear-gradient(
+        105deg,
+        transparent 30%,
+        rgba(255, 255, 255, 0.34) 44%,
+        transparent 58%
+      ),
+      url('../img/hero/google-play-btn-desk-focus-2x.png');
+  }
+}
+
+@keyframes hero-cta-lift {
+  0% {
+    transform: translateY(0) scale(1) rotate(0);
+  }
+
+  45% {
+    transform: translateY(-6px) scale(1.05) rotate(-1deg);
+  }
+
+  100% {
+    transform: translateY(-4px) scale(1.03) rotate(-0.5deg);
+  }
+}
+
+@keyframes hero-cta-shine {
+  0% {
+    opacity: 0;
+    background-position:
+      -160% center,
+      center;
+  }
+
+  24% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 1;
+    background-position:
+      190% center,
+      center;
+  }
+}
+
+@keyframes hero-cta-text-pop {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+
+  45% {
+    transform: translateY(-2px);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .hero-cta,
+  .hero-cta::after,
+  .hero-cta-line {
+    animation: none;
+    transition: none;
   }
 }
