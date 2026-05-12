@@ -4,23 +4,23 @@ const burgerMenuEl = document.querySelector('[data-visible]');
 const burgerLinkEls = document.querySelectorAll('.header-burger-link');
 
 if (openBtnEl && closeBtnEl && burgerMenuEl) {
-  openBtnEl.addEventListener('click', () => {
+  const openMenu = () => {
     burgerMenuEl.dataset.visible = 'open';
     openBtnEl.setAttribute('aria-expanded', 'true');
     document.body.classList.add('menu-open');
-  });
+  };
 
-  closeBtnEl.addEventListener('click', () => {
-    burgerMenuEl.dataset.visible = 'close';
+  const closeMenu = () => {
+    burgerMenuEl.dataset.visible = 'closed';
     openBtnEl.setAttribute('aria-expanded', 'false');
     document.body.classList.remove('menu-open');
-  });
+  };
+
+  openBtnEl.addEventListener('click', openMenu);
+
+  closeBtnEl.addEventListener('click', closeMenu);
 
   burgerLinkEls.forEach(link => {
-    link.addEventListener('click', () => {
-      burgerMenuEl.dataset.visible = 'close';
-      openBtnEl.setAttribute('aria-expanded', 'false');
-      document.body.classList.remove('menu-open');
-    });
+    link.addEventListener('click', closeMenu);
   });
 }
