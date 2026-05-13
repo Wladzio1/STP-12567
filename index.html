@@ -5,8 +5,12 @@
     <link rel="icon" type="image/svg+xml" href="/STP-12567/assets/Fav-Icon-B862Fvv0.png" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Milk Farm Tycoon</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
     <script type="module" crossorigin src="/STP-12567/index.js"></script>
-    <link rel="stylesheet" crossorigin href="/STP-12567/assets/index-DEnqZ1wb.css">
+    <link rel="stylesheet" crossorigin href="/STP-12567/assets/index-CW0DLrFT.css">
   </head>
   <body>
     <header class="header">
@@ -635,39 +639,118 @@
   </div>
 </section>
 
-      <section class="gallery">
+      <section class="gallery" id="galleryid">
   <div class="container gallery-container">
     <div class="gallery-content">
       <h2 class="gallery-title">Gallery</h2>
       <h3 class="gallery-h3">From small farm industry</h3>
     </div>
+
     <div class="gallery-grid">
-      <div class="gallery-swiper">
-        <button class="gallery-btn">
-          <svg
-            class="arrow left-arrow"
-            width="24"
-            height="24"
-            aria-hidden="true"
-          >
-            <use href="../img//left-arrow.svg"></use>
+      <div class="gallery-nav">
+        <button class="gallery-btn prev-btn">
+          <svg class="arrow left-arrow" width="24" height="24">
+            <use href="../img/icons.svg#left-arrow"></use>
           </svg>
         </button>
-        <button class="gallery-btn">
-          <svg
-            class="arrow right-arrow"
-            fill="none"
-            width="24"
-            height="24"
-            aria-hidden="true"
-          >
-            <use href="../img//right-arrow.svg"></use>
+        <button class="gallery-btn next-btn">
+          <svg class="arrow right-arrow" width="24" height="24">
+            <use href="../img/icons.svg#right-arrow"></use>
           </svg>
         </button>
       </div>
-      <div class="gallery-imgs"></div>
+
+      <div class="swiper gallery-swiper-main">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <picture>
+              <source
+                media="(min-width: 1440px)"
+                srcset="/STP-12567/assets/Screenshot01-BAPG2MaM.png 1x, /STP-12567/assets/Screenshot01-DfCj1Dg5.png 2x"
+              />
+              <source
+                srcset="/STP-12567/assets/Screenshot01-g9H17X0T.png 1x, /STP-12567/assets/Screenshot01-ZYkAWTY0.png 2x"
+              />
+              <img
+                src="/STP-12567/assets/Screenshot01-g9H17X0T.png"
+                alt="A screenshot of a gameplay showing a farm."
+                loading="lazy"
+              />
+            </picture>
+          </div>
+          <div class="swiper-slide">
+            <picture>
+              <source
+                media="(min-width: 1440px)"
+                srcset="/STP-12567/assets/Screenshot02-D39IyPgi.png 1x, /STP-12567/assets/Screenshot02-nATBZm7q.png 2x"
+              />
+              <source
+                srcset="/STP-12567/assets/Screenshot02--xg9USmH.png 1x, /STP-12567/assets/Screenshot02-Dl9bTHeY.png 2x"
+              />
+              <img
+                src="/STP-12567/assets/Screenshot02--xg9USmH.png"
+                alt="A screenshot of a gameplay showing a farm."
+                loading="lazy"
+              />
+            </picture>
+          </div>
+          <div class="swiper-slide">
+            <picture>
+              <source
+                media="(min-width: 1440px)"
+                srcset="/STP-12567/assets/Screenshot03-hpGZ8hQi.png 1x, /STP-12567/assets/Screenshot03-5zOlFeuT.png 2x"
+              />
+              <source
+                srcset="/STP-12567/assets/Screenshot03-B_j5fgmW.png 1x, /STP-12567/assets/Screenshot03-B5Q9-00N.png 2x"
+              />
+              <img
+                src="/STP-12567/assets/Screenshot03-B_j5fgmW.png"
+                alt="A screenshot of a gameplay showing a farm."
+                loading="lazy"
+              />
+            </picture>
+          </div>
+          <div class="swiper-slide">
+            <picture>
+              <source
+                media="(min-width: 1440px)"
+                srcset="/STP-12567/assets/Screenshot04-C40yy_gZ.png 1x, /STP-12567/assets/Screenshot04-BwOSR3ei.png 2x"
+              />
+              <source
+                srcset="/STP-12567/assets/Screenshot04-BQn2fpCP.png 1x, /STP-12567/assets/Screenshot04-Q7iQWLSk.png 2x"
+              />
+              <img
+                src="/STP-12567/assets/Screenshot04-BQn2fpCP.png"
+                alt="A screenshot of a gameplay showing a farm."
+                loading="lazy"
+              />
+            </picture>
+          </div>
+          <div class="swiper-slide">
+            <picture>
+              <source
+                media="(min-width: 1440px)"
+                srcset="/STP-12567/assets/Screenshot05-C7njIrE2.png 1x, /STP-12567/assets/Screenshot05-v2yBb6eT.png 2x"
+              />
+              <source
+                srcset="/STP-12567/assets/Screenshot05-DIb6RBjf.png 1x, /STP-12567/assets/Screenshot05-Bp6mOdgL.png 2x"
+              />
+              <img
+                src="/STP-12567/assets/Screenshot05-DIb6RBjf.png"
+                alt="A screenshot of a gameplay showing a farm."
+                loading="lazy"
+              />
+            </picture>
+          </div>
+        </div>
+      </div>
     </div>
   </div>
+  <img
+    class="gallery-wave"
+    src="/STP-12567/assets/hero1-desk-wave-1x-C4iXRZms.png"
+    alt="wave as a decoration"
+  />
 </section>
 
       <section class="reviews" id="reviewsid">
@@ -832,7 +915,7 @@
 </section>
 
       <section class="faq" id="faqid">
-  <div class="faq-container">
+  <div class="container faq-container">
     <h2 class="faq-title">FAQ</h2>
     <ul class="faq-list">
       <li class="faq-item">
@@ -923,14 +1006,13 @@
       </li>
     </ul>
   </div>
-</section>
-
-      <section class="contact-sect" id="contact-sectid">
-  <div class="contact-container">
-    <h2 class="contact-header">Contact</h2>
-    <p class="contact-p">Stay connected</p>
-    <p class="email-block">Email: info@fieldprotocolway.site</p>
-  </div>
+  <section class="contact-sect" id="contact-sectid">
+    <div class="contact-container">
+      <h2 class="contact-header">Contact</h2>
+      <p class="contact-p">Stay connected</p>
+      <p class="email-block">Email: info@fieldprotocolway.site</p>
+    </div>
+  </section>
 </section>
 
     </main>
@@ -948,5 +1030,6 @@
 </footer>
 
 
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
   </body>
 </html>
