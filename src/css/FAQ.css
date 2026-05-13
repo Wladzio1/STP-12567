@@ -1,5 +1,16 @@
 .faq {
   scroll-margin-top: 70px;
+  background-image: url(../img/contact/mob/BG.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+@media only screen and (min-resolution: 192dpi),
+  only screen and (min-resolution: 2dppx) {
+  .faq {
+    background-image: url('../img/contact/mob/BG@2x.png');
+  }
 }
 
 .faq-title {
@@ -10,6 +21,7 @@
 }
 
 .faq-item {
+  background-color: #fdfcf9;
   border: 1px solid rgba(83, 49, 30, 1);
   border-radius: 12px;
   max-width: 612px;
@@ -110,6 +122,17 @@
 }
 
 @media only screen and (min-width: 1440px) {
+  .faq {
+    background-image: url(../img/contact/desktop/BG.png);
+  }
+
+  @media only screen and (min-resolution: 192dpi),
+    only screen and (min-resolution: 2dppx) {
+    .faq {
+      background-image: url('../img/contact/desktop/BG@2x.png');
+    }
+  }
+
   .faq-item {
     width: 612px;
   }
