@@ -56,17 +56,26 @@
   height: 24px;
   background-color: #53311e;
   border-radius: 4px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
   border: none;
-  pointer-events: none;
+  padding: 0 !important;
+
+  /* Centrowanie - to musi być tutaj */
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
+  line-height: 0 !important;
+
+  cursor: pointer;
 }
 
 .faq-button svg {
-  width: 16px;
-  height: 16px;
-  fill: white;
+  flex-shrink: 0 !important;
+  width: 14px !important; /* Troszkę mniejsza ikona lepiej się centruje */
+  height: 14px !important;
+  fill: #fdfcf9 !important;
+  stroke: #fdfcf9 !important;
+  margin: 0 !important;
+  filter: brightness(0) invert(1) !important;
 }
 
 .faq-container {
@@ -92,18 +101,27 @@
   line-height: 125%;
 }
 
+.icon-arrow {
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center !important;
+  transform: translateX(2px) !important;
+  transform: rotate(90deg) translateX(2px) translateY(0px) !important;
+}
+
+.close-icon {
+  display: none !important;
+}
+
 .faq-item.active .faq-text {
   padding-bottom: 24px;
 }
 
-.close-icon {
-  display: none;
-}
 .faq-item.active .icon-arrow {
-  display: none;
+  display: none !important;
 }
 .faq-item.active .close-icon {
-  display: block;
+  display: block !important;
 }
 
 /* ANIMATION */
