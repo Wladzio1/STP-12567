@@ -48,6 +48,8 @@
 
 /* Fala - pozycjonowana absolutnie względem .gallery */
 .gallery-wave {
+  min-width: 1084px;
+  align-content: center;
   position: absolute;
   bottom: -1px;
   left: 0;

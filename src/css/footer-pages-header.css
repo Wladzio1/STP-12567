@@ -4,8 +4,13 @@ a {
 }
 
 .footer-pages-header-nav {
+  display: flex;
+  align-items: center;
+  justify-content: center;
   position: absolute;
   width: 100%;
+  max-width: 1248px;
+  margin: 0 auto;
   top: 0;
   left: 0;
   z-index: 100;

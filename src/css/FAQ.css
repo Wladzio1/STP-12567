@@ -129,6 +129,10 @@
     background-image: url(../img/contact/desktop/BG.png);
   }
 
+  .faq-container {
+    margin-top: 120px;
+  }
+
   @media only screen and (min-resolution: 192dpi),
     only screen and (min-resolution: 2dppx) {
     .faq {

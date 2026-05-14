@@ -106,6 +106,7 @@
   .reviews-container {
     position: relative;
     margin: 120px auto;
+    gap: 90px;
   }
 
   .reviews-imgs {
