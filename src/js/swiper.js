@@ -1,7 +1,6 @@
 const swiper = new Swiper('.gallery-swiper-main', {
   effect: 'coverflow',
   centeredSlides: true,
-  slidesPerView: 5,
   initialSlide: 2,
   loop: true,
   autoHeight: false,
@@ -12,10 +11,12 @@ const swiper = new Swiper('.gallery-swiper-main', {
     modifier: 1,
     slideShadows: false,
   },
+  slidesPerView: 'auto',
   breakpoints: {
     1440: {
+      slidesPerView: 5,
       coverflowEffect: {
-        stretch: 50,
+        stretch: 0,
       },
     },
   },

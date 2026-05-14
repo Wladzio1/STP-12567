@@ -36,9 +36,9 @@
 }
 .gameplay-loop-decor-img {
   position: absolute;
-  top: -30px;
-  right: 50px;
-  transform: rotate(70deg);
+  top: 30px;
+  right: 35px;
+  transform: rotate(74deg);
 }
 .gameplay-loop-content-img {
   margin: 0 auto;
