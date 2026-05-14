@@ -10,14 +10,39 @@ body {
   color: var(--text-color);
 }
 
-/* MOBILE STYLES */
-
-@media (max-width: 1439px) {
-  .last-sect-p {
-    margin: 0;
-    margin-bottom: 40px;
-  }
+.footer-pages-h2 {
+  font-size: 40px;
+  line-height: 125%;
+  font-weight: 800;
+  margin-bottom: 24px;
 }
+
+.footer-pages-h3 {
+  font-size: 24px;
+  line-height: 125%;
+  font-weight: 700;
+  letter-spacing: -1%;
+  margin-bottom: 10px;
+}
+
+.footer-pages-p {
+  font-size: 20px;
+  line-height: 125%;
+  font-weight: 400;
+  margin: 0;
+  margin-bottom: 12px;
+}
+
+a {
+  color: var(--text-color);
+  font-weight: 700;
+}
+
+.privacy-body,
+.terms-and-cond-body {
+  padding: 32px 16px;
+}
+
 button {
   color: var(--text-color);
   background-color: transparent;
@@ -27,4 +52,21 @@ button {
   line-height: 100%;
   padding: 12px;
   border-radius: 12px;
+}
+
+/* MOBILE STYLES */
+
+.footer-pages-p#last-sect-p {
+  margin: 0;
+  margin-bottom: 40px;
+}
+
+.footer-page-container {
+  max-width: 720px;
+  margin: 0 auto;
+}
+
+/* DESKTOP STYLES */
+
+@media (min-width: 1440px) {
 }

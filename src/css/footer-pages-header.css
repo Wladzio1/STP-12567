@@ -1,0 +1,35 @@
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+.footer-pages-header-nav {
+  position: absolute;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 100;
+  background-color: #fdfcf9;
+  box-shadow: 0 1px 0 rgba(83, 49, 30, 0.08);
+}
+
+.footer-pages-header-nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  padding: 16px;
+}
+
+.footer-pages-header-nav-logo {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.footer-pages-header-nav-logo-img {
+  width: 56px;
+  height: 56px;
+  border-radius: 14px;
+}

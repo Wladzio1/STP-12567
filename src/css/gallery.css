@@ -1,6 +1,6 @@
 .gallery {
   position: relative;
-  width: 100vw;
+  width: 100%;
   background-color: #77b73d;
   scroll-margin-top: 70px;
   overflow: hidden;
@@ -63,22 +63,23 @@
 }
 
 .gallery-btn {
+  padding: 0;
   display: flex;
-  align-items: center;
-  justify-content: center;
   width: 40px;
   height: 40px;
+  align-items: center;
+  justify-content: center;
   border: none;
-  border-radius: 2px;
-  background-color: #ffffff;
   cursor: pointer;
+  background: transparent;
+  overflow: hidden;
 }
 
 /* Swiper - Kontener */
 .gallery-swiper-main {
   width: 100%;
   padding-top: 20px;
-  padding-bottom: 80px; /* Miejsce na falę */
+  padding-bottom: 80px;
 }
 
 /* Wymuszenie wyrównania do dołu wszystkich slajdów */
@@ -122,7 +123,18 @@
 }
 
 @media screen and (min-width: 1440px) {
+  .gallery-container {
+    padding-top: 120px;
+  }
+
   .gallery-swiper-main .swiper-slide {
     width: 392px !important;
+  }
+
+  .gallery-nav {
+    gap: 8px;
+    width: fit-content;
+    right: 0;
+    margin-left: auto;
   }
 }
