@@ -32,6 +32,7 @@
     display: flex;
     align-items: center;
     gap: 176px;
+    margin: 90px 0px;
   }
   .about-game-title {
     margin-bottom: 0px;

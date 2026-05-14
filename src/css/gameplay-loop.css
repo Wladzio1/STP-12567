@@ -86,6 +86,7 @@
   .gameplay-loop-content-list {
     flex-direction: row;
     align-items: baseline;
+    margin: 80px 0px;
   }
   .gameplay-loop-content-item {
     flex-basis: calc((100% - 4 * 24px) / 5);
