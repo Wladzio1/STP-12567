@@ -15,7 +15,7 @@ const swiper = new Swiper('.gallery-swiper-main', {
   breakpoints: {
     1440: {
       coverflowEffect: {
-        stretch: 0,
+        stretch: 50,
       },
     },
   },

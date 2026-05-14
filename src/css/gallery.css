@@ -123,13 +123,18 @@
   object-fit: cover;
 }
 
+.gallery-swiper-main .swiper-slide:not(.swiper-slide-active) {
+  filter: none;
+}
+
 @media screen and (min-width: 1440px) {
   .gallery-container {
     padding-top: 120px;
   }
 
   .gallery-swiper-main .swiper-slide {
-    width: 392px !important;
+    width: 380px !important;
+    height: 480px !important;
   }
 
   .gallery-nav {
