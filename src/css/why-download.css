@@ -35,6 +35,8 @@
   min-height: 240px;
 }
 .why-download-content-img {
+  flex-shrink: 1;
+
   margin: 0 auto;
   margin-bottom: 16px;
 }
@@ -62,7 +64,8 @@
     display: flex;
     align-items: center;
     gap: 28px;
-    margin: 80px 0px;
+    margin-top: 80px;
+    margin-bottom: 80px;
   }
 
   .why-download-wrap {
@@ -83,5 +86,9 @@
 
   .why-download-content-title {
     min-height: 90px;
+  }
+  .why-download-content-img {
+    width: 60px;
+    height: 66px;
   }
 }
