@@ -14,7 +14,6 @@ const swiper = new Swiper('.gallery-swiper-main', {
   slidesPerView: 'auto',
   breakpoints: {
     1440: {
-      slidesPerView: 5,
       coverflowEffect: {
         stretch: 0,
       },
