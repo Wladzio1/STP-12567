@@ -54,6 +54,7 @@
   width: 100%;
   z-index: 99;
   pointer-events: none;
+  height: 135px;
 }
 
 .gallery-nav {
