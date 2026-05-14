@@ -78,8 +78,7 @@
 
 .gallery-swiper-main {
   width: 100%;
-  padding-top: 20px;
-  padding-bottom: 80px;
+  margin-top: 20px;
 }
 
 .gallery-swiper-main .swiper-wrapper {
