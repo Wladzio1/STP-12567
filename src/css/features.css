@@ -57,7 +57,12 @@
   .features-content-item {
     grid-column: span 2;
   }
-
+  .features-wrap-title {
+    margin-bottom: 24px;
+  }
+  .features-wrap-text {
+    margin-bottom: 90px;
+  }
   .features-content-item:nth-child(4) {
     grid-column: 2 / span 2;
   }

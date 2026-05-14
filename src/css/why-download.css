@@ -19,12 +19,10 @@
   line-height: 1.25;
   color: #53311e;
 }
-.why-download-content {
-}
+
 .why-download-content-list {
   display: flex;
   flex-direction: column;
-
   gap: 8px;
 }
 
@@ -34,14 +32,11 @@
   border: 3px solid #53311e;
   border-radius: 12px;
   padding: 24px 8px 0;
-
   min-height: 240px;
 }
 .why-download-content-img {
   margin: 0 auto;
   margin-bottom: 16px;
-  width: 60px;
-  height: 50px;
 }
 .why-download-content-title {
   font-weight: 700;
