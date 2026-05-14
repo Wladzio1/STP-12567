@@ -31,8 +31,10 @@
   .about-game-container {
     display: flex;
     align-items: center;
+
     gap: 176px;
-    margin: 90px 0px;
+    margin-top: 90px;
+    margin-bottom: 90px;
   }
   .about-game-title {
     margin-bottom: 0px;
