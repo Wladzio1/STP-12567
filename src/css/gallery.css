@@ -119,7 +119,7 @@
 }
 
 .gallery-swiper-main .swiper-slide:not(.swiper-slide-active) {
-  filter: brightness(0.8);
+  filter: none;
 }
 
 @media screen and (min-width: 1440px) {
@@ -128,7 +128,8 @@
   }
 
   .gallery-swiper-main .swiper-slide {
-    width: 392px !important;
+    width: 380px !important;
+    height: 480px !important;
   }
 
   .gallery-nav {
