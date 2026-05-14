@@ -77,19 +77,22 @@
   content: '';
   position: absolute;
   bottom: -10px;
-  border-style: solid;
+  width: 42px;
+  height: 10px;
+  background-color: #77b73d;
 }
 
 .review-item:nth-child(odd) .review-bubble::after {
-  left: 20px;
-  border-width: 10px 10px 0 0;
-  border-color: #77b73d transparent transparent transparent;
+  left: 10px; /* Dostosuj, żeby szpic był w odpowiednim miejscu pod łukiem */
+  /* Kształt: płaska góra, szpic po prawej stronie na dole */
+  clip-path: polygon(0 0, 100% 0, 0 100%);
 }
 
+/* Ogonek dla prawej strony (even) */
 .review-item:nth-child(even) .review-bubble::after {
-  right: 20px;
-  border-width: 10px 0 0 10px;
-  border-color: #77b73d transparent transparent transparent;
+  right: 10px;
+  /* Lustrzane odbicie: szpic po lewej stronie na dole */
+  clip-path: polygon(0 0, 100% 0, 100% 100%);
 }
 
 .reviews-imgs {

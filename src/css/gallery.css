@@ -75,20 +75,18 @@
   overflow: hidden;
 }
 
-/* Swiper - Kontener */
 .gallery-swiper-main {
   width: 100%;
   padding-top: 20px;
   padding-bottom: 80px;
 }
 
-/* Wymuszenie wyrównania do dołu wszystkich slajdów */
 .gallery-swiper-main .swiper-wrapper {
   display: flex !important;
   align-items: flex-end !important;
+  height: 475px !important;
 }
 
-/* Slajd - Wymiary z makiety */
 .gallery-swiper-main .swiper-slide {
   width: 206px !important;
   height: 475px !important;
@@ -101,10 +99,17 @@
 
   box-sizing: border-box;
   overflow: hidden;
+
   box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+  filter: brightness(0.4);
   transition:
     transform 0.3s ease,
     filter 0.3s ease;
+}
+
+.gallery-swiper-main .swiper-slide-active {
+  filter: brightness(1) !important;
+  z-index: 10; /* Żeby środkowy był "nad" innymi, jeśli na siebie nachodzą */
 }
 
 /* Resetowanie obrazków i kontenerów picture */
@@ -116,10 +121,6 @@
   margin: 0;
   padding: 0;
   object-fit: cover;
-}
-
-.gallery-swiper-main .swiper-slide:not(.swiper-slide-active) {
-  filter: brightness(0.8);
 }
 
 @media screen and (min-width: 1440px) {
