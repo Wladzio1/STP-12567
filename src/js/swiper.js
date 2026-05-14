@@ -1,7 +1,7 @@
 const swiper = new Swiper('.gallery-swiper-main', {
   effect: 'coverflow',
   centeredSlides: true,
-  slidesPerView: 'auto',
+  slidesPerView: 5,
   initialSlide: 2,
   loop: true,
   autoHeight: false,
