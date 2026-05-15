@@ -10,6 +10,12 @@ body {
   color: var(--text-color);
 }
 
+.footer-page-container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
 .footer-pages-h2 {
   font-size: 40px;
   line-height: 125%;
@@ -22,7 +28,7 @@ body {
   line-height: 125%;
   font-weight: 700;
   letter-spacing: -1%;
-  margin-bottom: 10px;
+  margin-bottom: 16px;
 }
 
 .footer-pages-p {
@@ -36,12 +42,6 @@ body {
 a {
   color: var(--text-color);
   font-weight: 700;
-}
-
-.privacy-body,
-.terms-and-cond-body {
-  padding: 32px 16px;
-  color: #000000;
 }
 
 button {
@@ -62,12 +62,25 @@ button {
   margin-bottom: 40px;
 }
 
-.footer-page-container {
+.footer-page-content {
+  display: block;
+  flex-grow: 0;
   max-width: 1248px;
+  width: 100%;
+  color: #000000;
+  padding: 32px 16px;
   margin: 0 auto;
+}
+
+.domain {
+  text-decoration: underline;
 }
 
 /* DESKTOP STYLES */
 
 @media (min-width: 1440px) {
+  .footer-page-content {
+    padding-left: 0;
+    padding-right: 0;
+  }
 }

@@ -3,38 +3,36 @@ a {
   color: inherit;
 }
 
-.footer-pages-header-nav {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  position: absolute;
+.footer-pages-header {
+  min-width: 0 !important;
+  box-sizing: border-box;
   width: 100%;
   max-width: 1248px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px;
   margin: 0 auto;
-  top: 0;
-  left: 0;
   z-index: 100;
   background-color: #fdfcf9;
   box-shadow: 0 1px 0 rgba(83, 49, 30, 0.08);
-}
-
-.footer-pages-header-nav {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  width: 100%;
-  padding: 16px;
 }
 
 .footer-pages-header-nav-logo {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  flex-shrink: 0;
 }
 
 .footer-pages-header-nav-logo-img {
   width: 56px;
   height: 56px;
   border-radius: 14px;
+}
+
+@media screen and (min-width: 1440px) {
+  .footer-pages-header {
+    padding-left: 0;
+    padding-right: 0;
+  }
 }
