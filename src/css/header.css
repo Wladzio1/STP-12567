@@ -167,13 +167,13 @@
   transform: translateX(0);
 }
 
-.header-burger-menu[data-visible='close'] {
+.header-burger-menu[data-visible='closed'] {
   visibility: hidden;
   transform: translateX(100%);
   pointer-events: none;
 }
 
-body.menu-open {
+body[data-menu='open'] {
   overflow: hidden;
 }
 
