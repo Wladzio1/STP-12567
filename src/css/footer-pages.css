@@ -37,6 +37,7 @@ body {
   font-weight: 400;
   margin: 0;
   margin-bottom: 12px;
+  color: #000000;
 }
 
 a {
@@ -67,7 +68,7 @@ button {
   flex-grow: 0;
   max-width: 1248px;
   width: 100%;
-  color: #000000;
+  color: var(--text-color);
   padding: 32px 16px;
   margin: 0 auto;
 }
