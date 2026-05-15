@@ -1,16 +1,16 @@
 document.addEventListener('DOMContentLoaded', () => {
-  const faqItems = document.querySelectorAll('.faq-item');
+  const faqItems = document.querySelectorAll('[data-faq-item]');
 
   faqItems.forEach(item => {
-    const header = item.querySelector('.faq-header');
+    const header = item.querySelector('[data-faq-header]');
 
     header.addEventListener('click', () => {
-      const isActive = item.classList.contains('active');
+      const isActive = item.hasAttribute('data-faq-active');
 
-      faqItems.forEach(el => el.classList.remove('active'));
+      faqItems.forEach(el => el.removeAttribute('data-faq-active'));
 
       if (!isActive) {
-        item.classList.add('active');
+        item.setAttribute('data-faq-active', '');
       }
     });
   });

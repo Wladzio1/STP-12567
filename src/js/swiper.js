@@ -1,4 +1,4 @@
-const swiper = new Swiper('.gallery-swiper-main', {
+const swiper = new Swiper('[data-gallery-swiper-main]', {
   effect: 'coverflow',
   centeredSlides: true,
   initialSlide: 2,
@@ -20,7 +20,7 @@ const swiper = new Swiper('.gallery-swiper-main', {
     },
   },
   navigation: {
-    nextEl: '.next-btn',
-    prevEl: '.prev-btn',
+    nextEl: '[data-swiper-next]',
+    prevEl: '[data-swiper-prev]',
   },
 });
